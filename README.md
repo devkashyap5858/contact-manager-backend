@@ -144,8 +144,7 @@ Body (raw JSON):
 {
   "name": "Alice Johnson",
   "email": "alice@example.com",
-  "phone": "123-456-7890",
-  "type": "personal"
+  "phone": "123-456-7890"
 }
 
 4. Get All Contacts (Protected)
