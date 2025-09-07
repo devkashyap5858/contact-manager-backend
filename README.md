@@ -44,6 +44,7 @@ backend/
 2. Install dependencies:
 
 - npm install
+- npm install cors
 
 3. Create a .env file in root and add:
 
@@ -211,6 +212,22 @@ Authorization: Bearer <your_jwt_token>
 
 text
 Authorization: Bearer <your_jwt_token>
+
+---
+
+### 🌐 CORS Configuration
+
+This backend uses **CORS** to allow requests from the React frontend.
+
+In `server.js`:
+
+```js
+import cors from "cors";
+
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true
+}));
 
 ---
 
