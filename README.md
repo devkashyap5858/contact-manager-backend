@@ -219,18 +219,7 @@ Authorization: Bearer <your_jwt_token>
 
 This backend uses **CORS** to allow requests from the React frontend.
 
-In `server.js`:
-
-```js
-import cors from "cors";
-
-app.use(cors({
-  origin: "http://localhost:3000",
-  credentials: true
-}));
-
 ---
-
 
 ## 👨‍💻 Author
 - **Dev Kashyap**
